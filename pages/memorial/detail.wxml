@@ -1,0 +1,35 @@
+<!--pages/memorial/detail.wxml-->
+<view class="container" style="background-image: url({{wltBackgroundImage}});">
+
+  <view class="musicd">
+      <image src="https://static.imolacn.com/grj/resource/play.gif" wx:if="{{isPlay}}" bindtap="audioPause"></image>
+      <image src="https://static.imolacn.com/grj/resource/pause.gif" wx:else bindtap="audioPlay"></image>
+  </view>
+
+  <view class="avatar" style="background-image: url({{headImg}});left:{{width * rpxUnit / 2 - 25}}rpx; top:{{133 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="guangyun" style="background-image: url({{guangyun}});left:{{width * rpxUnit / 2 - 40}}rpx; top:{{125 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="text" style="left:{{width * rpxUnit / 2 - 50}}rpx; top:{{167 * rpxUnit + deviceTop}}rpx">{{memorialDetail.memorialInfo.name}}</view>
+  <view class="text" style="left:{{width * rpxUnit / 2 - 50}}rpx; top:{{200 * rpxUnit + deviceTop}}rpx">{{memorialDetail.memorialInfo.birthdate}}</view>
+  <view class="text" style="left:{{width * rpxUnit / 2 - 50}}rpx; top:{{207 * rpxUnit + deviceTop}}rpx">{{memorialDetail.memorialInfo.deathdate}}</view>
+
+  <view class="hudie" style="background-image: url({{hudieLeft}});left:{{width * rpxUnit / 2 - 125}}rpx; top:{{155 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="hudie" style="background-image: url({{hudieRight}});left:{{width * rpxUnit / 2 + 125 - 35}}rpx; top:{{155 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="lazhu" style="background-image: url({{lazhuLeft}});left:{{width * rpxUnit / 2 - 90}}rpx; top:{{210 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="lazhu" style="background-image: url({{lazhuRight}});left:{{width * rpxUnit / 2 + 90 - 22}}rpx; top:{{210 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="chajiu" style="background-image: url({{chajiu}});left:{{width * rpxUnit / 2 - 50}}rpx; top:{{235 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="xianglu" style="background-image: url({{xianglu}});left:{{width * rpxUnit / 2 - 30}}rpx; top:{{216 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="xianheshengui" style="background-image: url({{xianheshenguiLeft}});left:{{width * rpxUnit / 2 - 90}}rpx; top:{{250 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="xianheshengui" style="background-image: url({{xianheshenguiRight}});left:{{width * rpxUnit / 2 + 90 - 50}}rpx; top:{{250 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="pinyao" style="background-image: url({{pinyao1}});left:{{width * rpxUnit / 2 - 240}}rpx; top:{{222 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="pinyao" style="background-image: url({{pinyao2}});left:{{width * rpxUnit / 2 - 160}}rpx; top:{{222 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="pinyao" style="background-image: url({{pinyao3}});left:{{width * rpxUnit / 2 + 160 - 80}}rpx; top:{{222 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="pinyao" style="background-image: url({{pinyao4}});left:{{width * rpxUnit / 2 + 240 - 80}}rpx; top:{{222 * rpxUnit + deviceTop}}rpx"></view>
+
+  <view class="peiji" style="background-image: url({{peiji1}});left:{{width * rpxUnit / 2 - 250}}rpx; top:{{250 * rpxUnit + deviceTop}}rpx"></view>
+  <view class="peiji" style="background-image: url({{peiji2}});left:{{width * rpxUnit / 2 + 250 - 60}}rpx; top:{{250 * rpxUnit + deviceTop}}rpx"></view>
+</view>

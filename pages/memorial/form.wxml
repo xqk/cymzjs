@@ -1,0 +1,18 @@
+<!--pages/memorial/form.wxml-->
+<view class="container">
+  <view class="page-head"></view>
+  <form bindsubmit="formSubmit">
+    <view class="photo-outside">
+      <view class="photo-inside">
+        <view class="photo-inside-content" bindtap="bindUpload" style="background-image: url({{headImg}});"></view>
+        <input class="hidden" name="headImg" value="{{headImg}}" />
+      </view>
+    </view>
+    <view class="form">
+      <input placeholder="逝者姓名" class="form-input" name="name"  value="{{name}}" />
+      <input placeholder="生日日期，如：1941-08-07" class="form-input" name="birthdate" value="{{birthdate}}" />
+      <input placeholder="去世日期，如：2023-01-14" class="form-input" name="deathdate" value="{{deathdate}}" />
+      <button class="btn" form-type="submit">前往扫墓</button>
+    </view>
+  </form>
+</view>

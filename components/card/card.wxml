@@ -1,0 +1,29 @@
+<!--components/card/card.wxml-->
+<view>
+  <block wx:for="{{cards}}" wx:key="index">
+    <view class="card-item">
+      <view class="card-item-inside">
+        <view class="card-top">
+          {{item.label}}
+        </view>
+        <view class="card-body" style="flex-direction:row;">
+          <view class="card-avatar" style="background-image: url({{item.defaultHeadImageUrl}});"></view>
+          <view class="card-desc">
+            <view class="card-desc-item">
+              <view class="card-desc-item-key">访问次数</view>
+              <view class="card-desc-item-value">{{item.visitCount}}</view>
+            </view>
+            <view class="card-desc-item">
+              <view class="card-desc-item-key">创建日期</view>
+              <view class="card-desc-item-value">{{item.createDate}}</view>
+            </view>
+            <view class="card-desc-item">
+              <view class="card-desc-item-key">专属编号</view>
+              <view class="card-desc-item-value">{{item.cloudMemorialNo}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,21 @@
+/* components/platform/saomu.wxss */
+.saomu {
+  position: absolute;
+}
+.saomu-muhua {
+  width: 296rpx;
+  height: 131rpx;
+  background-size: cover;
+}
+.saomu-saomu {
+  display: table;
+  position: absolute;
+  top: 140rpx;
+  width: 296rpx;
+}
+.saomu-saomu-item {
+  width: 131rpx;
+  height: 109rpx;
+  background-size: cover;
+  display: table-cell;
+}

@@ -1,0 +1,8 @@
+<!--components/banner/banner.wxml-->
+<swiper class="slider" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" interval="5000">
+  <block wx:for="{{banner}}" wx:key="index">
+    <swiper-item>
+      <image class="slider-image" data-index="{{index}}" src="{{item.imageUrl}}" bindtap="reviewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>

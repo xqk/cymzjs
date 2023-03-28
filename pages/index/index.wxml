@@ -1,0 +1,17 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="yindaoheader">
+    <image src="{{yindaoheader}}"></image>
+  </view>
+  <view class="content-body">
+    <view class="content-info" bindtap="runMemorialForm">
+      <button class="btn">{{name}}</button>
+      <view class="content-text">
+        <text decode="true">{{description}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="yindaofooter">
+    <image src="{{yindaofooter}}"></image>
+  </view>
+</view>

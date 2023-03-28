@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "saomu": "../../components/platform/saomu"
+  }
+}

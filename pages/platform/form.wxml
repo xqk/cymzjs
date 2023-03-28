@@ -1,0 +1,56 @@
+<!--pages/platform/form.wxml-->
+<view class="container jianguanfooter" style="background-image: url({{jianguanfooter}});">
+  <view class="tab">
+    <view class="tab-item {{tab1CurrentClass}}" bindtap="changTab" data-index="0">前往扫墓</view>
+    <view class="tab-item {{tab2CurrentClass}}" bindtap="changTab" data-index="1">快速扫墓</view>
+  </view>
+  <view wx:if="{{tabIndex==0}}">
+    <form bindsubmit="formSubmit">
+    <view class="photo-outside">
+      <view class="photo-inside" bindtap="bindUpload" style="background-image: url({{rahmen}});">
+        <view wx:if="{{headImg != ''}}" class="avatar" style="background-image: url({{headImg}});"></view>
+        <view wx:else="{{headImg == ''}}" class="avatar" style="background-image: url({{defaultUploadUrl}});"></view>
+        <input class="hidden" name="headImg" value="{{headImg}}" />
+      </view>
+    </view>
+    <view class="group-inputs">
+      <view class="group-input">
+        <input id="name1" name="nameOne" value="{{nameOne}}" placeholder="逝者姓名1"/>
+      </view>
+      <view class="group-input">
+        <picker bindchange="checkRelation" value="{{index}}" range="{{relations}}" data-toid="relation1">
+          <view class="picker">
+            <input id="relation1" name="relationOne" value="{{relationOne}}" placeholder="选择关系1" disabled="true"/>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="group-inputs">
+      <view class="group-input">
+        <input id="name2" name="nameTwo" value="{{nameTwo}}" placeholder="逝者姓名2"/>
+      </view>
+      <view class="group-input">
+        <picker bindchange="checkRelation" value="{{index}}" range="{{relations}}" data-toid="relation2">
+          <view class="picker">
+            <input id="relation2" name="relationTwo" value="{{relationTwo}}" placeholder="选择关系2" disabled="true"/>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="btn-wrap"><button class="btn" form-type="submit">前往扫墓</button></view>
+    </form>
+  </view>
+  <view wx:else="{{tabIndex==1}}">
+    <view class="flex_box">
+      <radio-group bindchange="fastRadioChange">
+        <label class="flex_item" wx:for="{{platformMemorialConfig}}" wx:key="{{item.id}}">
+          <view class="flex_item__hd">
+            <radio value="{{item.id}}"/> {{item.name}}
+          </view>
+        </label>
+      </radio-group>
+    </view>
+    <view class="btn-wrap"><button class="btn" bindtap="fastMemorial">快速扫墓</button></view>
+  </view>
+  <view class="count">共<text class="count-num">{{visitCount}}</text>次</view>
+</view>

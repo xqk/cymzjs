@@ -1,0 +1,50 @@
+/* pages/index/index.wxss */
+.container {
+  height: 100vh;
+  background-color: #d6f2c9;
+  display: table;
+}
+.yindaoheader {
+  width: 750rpx;
+  height: 373rpx;
+  display: table-row;
+}
+.yindaoheader image {
+  width: 750rpx;
+  height: 373rpx;
+}
+.yindaofooter {
+  width: 750rpx;
+  height: 206rpx;
+  display: table-row;
+}
+.yindaofooter image {
+  width: 750rpx;
+  height: 206rpx;
+}
+.content-body {
+  display: table-row;
+}
+.content-info {
+  padding: 20rpx 40rpx;
+  word-break: break-all;
+  overflow: scroll;
+  height: 600rpx;
+}
+.content-text {
+  margin: 40rpx 0;
+  line-height: 1.6em;
+  font-size: 30rpx;
+  color: #333333;
+}
+.btn {
+  background-color: #04b706;
+  border: 1px solid #349e30;
+  color: #ffffff;
+  text-align: center;
+  margin: 5rpx 0;
+  padding: 5rpx 0;
+  border-radius: 5px;
+  line-height: 1.6em;
+  font-size: 30rpx;
+}

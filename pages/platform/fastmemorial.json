@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "saomu": "../../components/platform/saomu",
+    "dialog": "../../components/platform/dialog"
+  }
+}

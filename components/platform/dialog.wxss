@@ -1,0 +1,126 @@
+/* components/platform/dialog.wxss */
+.dialog-container {
+  width: 600rpx;
+  height: 662rpx;
+  position: absolute;
+}
+.dialog-container-wrap {
+  width: 600rpx;
+  height: 662rpx;
+  position: relative;
+}
+.dialog{
+  width: 600rpx;
+  height: 662rpx;
+  position: absolute;
+  z-index: 120;
+}
+.dialog-bg{
+  background-color: #c0bfbd;
+  width: 600rpx;
+  height: 662rpx;
+  position: absolute;
+  z-index: 119;
+  opacity: 0.8;
+}
+.dialog-title {
+  color: #ffffff;
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.dialog-body {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  height: 500rpx;
+}
+.dialog-btns {
+  display: table;
+  width: 600rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.dialog-btn {
+  display: table-cell;
+  color: #ffffff;
+  text-align: center;
+}
+.dialog-btn-ok {
+  color: #6cc44c;
+}
+.dialog-data {
+ background-color: #ffffff;
+ border-radius: 20rpx;
+ margin: 20rpx;
+ height: 470rpx;
+ overflow: scroll;
+}
+.dialog-flex_item {
+  display: inline-block;
+  border: 1rpx solid #cccccc;
+  width: 240rpx;
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+}
+.dialog-flex_item__hd {
+  text-align: center;
+}
+.dialog-flex_item_name {
+  line-height: 60rpx;
+}
+.dialog-flex_item_image image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.dialog-flex_item_check {
+  line-height: 60rpx;
+}
+.xianhua-wrap {
+  display: table;
+  padding-top: 650rpx;
+  align-items: center;
+  width: 100vw;
+}
+.xianhua {
+  display: table-cell;
+  align-items: center;
+  text-align: center;
+}
+
+.xianhua image {
+  width: 100rpx;
+  height: 114rpx;
+}
+.xianhua-image {
+  width: 100rpx;
+  height: 114rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.xianglu {
+  width: 60rpx;
+  height: 107rpx;
+  background-size: cover;
+  position: absolute;
+  z-index: 102;
+}
+.guibai {
+  width: 100rpx;
+  height: 219rpx;
+  background-size: cover;
+  position: absolute;
+  z-index: 102;
+}
+.dialog-message_item_name {
+  background-color: #cae1cd;
+  margin: 20rpx;
+  line-height: 45rpx;
+  padding: 10rpx;
+}
+.xianhe {
+  width: 100rpx;
+  height: 75rpx;
+  background-size: cover;
+  position: absolute;
+  z-index: 106;
+}

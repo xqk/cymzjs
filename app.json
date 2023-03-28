@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/platform/index",
+    "pages/platform/form",
+    "pages/platform/fastmemorial"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "崇阳民政网络云祭扫平台",
+    "navigationBarTextStyle": "black"
+  },
+  "resizable": true
+}

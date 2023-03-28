@@ -1,0 +1,83 @@
+/* pages/platform/fastmemorial.wxss */
+.container {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.avatar {
+  background-position: center;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background-size: cover;
+  position: absolute;
+  z-index: 101;
+}
+.name {
+  position: absolute;
+  z-index: 102;
+  color: #cccccc;
+  text-align: center;
+  width: 100vw;
+  font-size: 16rpx;
+}
+.guangyun {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-size: cover;
+  position: absolute;
+  z-index: 100;
+}
+.lazhu {
+  width: 25rpx;
+  height: 90rpx;
+  background-size: cover;
+  position: absolute;
+}
+.hudie {
+  width: 30rpx;
+  height: 24rpx;
+  background-size: cover;
+  position: absolute;
+}
+.xianheshengui {
+  width: 50rpx;
+  height: 97rpx;
+  background-size: cover;
+  position: absolute;
+}
+.menus {
+  display: table;
+  width: 100vw;
+  background-color: #ffffff;
+  position:fixed;
+  bottom: 0;
+  padding: 20rpx 0 20rpx;
+}
+.menus-item {
+  display: table-cell;
+  text-align: center;
+  color: #789889;
+  text-align: center;
+}
+.menus-item-current {
+  color: #d1a037;
+}
+.menus-item image {
+  width: 49rpx;
+  height: 44rpx;
+}
+.musicd {
+  position: fixed;
+  z-index: 9999;
+  bottom: 160rpx;
+  right: 50rpx;
+}
+.musicd image {
+  width: 60rpx;
+  height: 60rpx;
+  z-index: 999;
+  border-radius: 50%;
+}

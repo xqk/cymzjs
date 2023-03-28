@@ -1,0 +1,56 @@
+<!--components/platform/dialog.wxml-->
+<view class="dialog-container" hidden="{{hide}}" style="top:{{top * windowInfo.rpxUnit}}rpx;left:{{left * windowInfo.rpxUnit}}rpx">
+  <view class="dialog-container-wrap">
+    <view class="dialog">
+      <view class="dialog-title">{{name}}</view>
+      <view class="dialog-body">
+        <view class="dialog-data">
+          <view wx:if="{{kind != 'message'}}">
+            <radio-group bindchange="dialogRadioChange">
+              <label class="dialog-flex_item" wx:for="{{items}}" wx:key="{{index}}">
+                <view class="dialog-flex_item__hd">
+                  <view class="dialog-flex_item_name">{{item.name}}</view>
+                  <view class="dialog-flex_item_image">
+                    <image src="{{item.previewUrl}}"></image>
+                  </view>
+                  <view class="dialog-flex_item_check"><radio value="{{index}}"/> </view>
+                </view>
+              </label>
+            </radio-group>
+          </view>
+          <view wx:else="{{kind=='message'}}">
+            <radio-group bindchange="dialogRadioChange">
+              <label class="dialog-message_item" wx:for="{{items}}" wx:key="{{index}}">
+                <view class="dialog-message_item__hd">
+                  <view class="dialog-message_item_name">
+                  {{item.name}}
+                  <radio value="{{index}}"/> 
+                  </view>
+                </view>
+              </label>
+            </radio-group>
+          </view>
+        </view>
+      </view>
+      <view class="dialog-btns">
+        <view class="dialog-btn dialog-btn-cancel" bindtap="dialogClose">取消</view>
+        <view class="dialog-btn dialog-btn-ok" bindtap="dialogOk">确定</view>
+      </view>
+    </view>
+    <view class="dialog-bg"></view>
+  </view>
+</view>
+
+<saomu id="saomu" saomu="{{feteScene.saomu[0].imageUrl}}" muhua="{{feteScene.muhua[muhuaIndex].imageUrl}}" left="{{windowInfo.width * windowInfo.rpxUnit / 2 - 148}}" top="{{50 * windowInfo.rpxUnit + windowInfo.deviceTop}}"></saomu>
+
+<view class="xianhua-wrap">
+  <view class="xianhua">
+    <image wx:for="{{xianhua}}" src="{{item.imageUrl}}"></image>
+  </view>
+</view>
+
+<view class="xianglu" style="background-image: url({{xianglu.imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 30}}rpx; top:{{240 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+
+<view class="guibai" style="background-image: url({{feteScene.guibai[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 50}}rpx; top:{{440 * windowInfo.rpxUnit}}rpx" hidden="{{guibaiHide}}"></view>
+
+<view class="xianhe" style="background-image: url({{feteScene.xianhe[0].imageUrl}});left:{{xianheLeft * windowInfo.rpxUnit}}rpx; top:{{xianheTop * windowInfo.rpxUnit}}rpx" animation="{{moveXianhe}}"></view>

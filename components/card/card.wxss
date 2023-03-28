@@ -1,0 +1,51 @@
+/* components/card/card.wxss */
+.card-item {
+  margin: 20rpx 20rpx 0;
+  background-color: #61927c;
+  border-radius: 10rpx;
+}
+.card-item-inside {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-right: 5rpx;
+  padding: 10rpx;
+}
+.card-top {
+  text-align: center;
+  border-bottom: 1rpx solid #e6e7e6;
+  line-height: 1.5rem;
+}
+.card-body {
+  padding: 15rpx 25rpx;
+  position: relative;
+  display: table;
+}
+.card-avatar {
+  width: 150rpx;
+  height: 180rpx;
+  border: 8rpx solid #c0c5c1;
+  border-radius: 8rpx;
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+}
+.card-desc {
+  display: table-cell;
+  padding-left: 20rpx;
+}
+.card-desc-item {
+  display: table;
+}
+.card-desc-item-key {
+  display: table-cell;
+  color: #666666;
+  font-size: 30rpx;
+  line-height: 1.5rem;
+}
+.card-desc-item-value {
+  display: table-cell;
+  padding-left: 20rpx;
+  color: #666666;
+  font-size: 30rpx;
+  line-height: 1.5rem;
+}

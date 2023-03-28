@@ -1,0 +1,8 @@
+<!--components/platform/saomu.wxml-->
+<view class="saomu" style="top: {{top}}rpx; left: {{left}}rpx" hidden="{{hide}}">
+  <view class="saomu-muhua" style="background-image: url({{muhua}});"></view>
+  <view class="saomu-saomu" animation="{{moveSaomu}}" bindtransitionend="hideSaomu"  bindanimationend="hideSaomu" hidden="{{hideSaomu}}">
+    <view class="saomu-saomu-item" style="background-image: url({{saomu}});"></view>
+    <view class="saomu-saomu-item" style="background-image: url({{saomu}});transform: rotateY(180deg);"></view>
+  </view>
+</view>

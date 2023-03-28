@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <banner banner="{{banner}}"></banner>
+  <card cards="{{cards}}"></card>
+</view>

@@ -1,0 +1,62 @@
+/* pages/memorial/form.wxss */
+.container {
+  background-image: url("https://static.imolacn.com/grj/resource/cymzjs-2-b.jpg");
+  background-color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:100vw;
+  height: 100vh;
+}
+.page-head {
+  background-image: url("https://static.imolacn.com/grj/resource/cymzjs-2-h.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 32vw;
+}
+.photo-outside{
+  height: 408rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.photo-inside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://static.imolacn.com/grj/resource/cymzjs-2-p-1.jpg");
+  background-size: cover;
+  width:333rpx;
+  height:408rpx;
+}
+.photo-inside-content {
+  width: 244rpx;
+  height: 320rpx;
+  background-size: cover;
+  background-position: center;
+}
+.form {
+  padding: 0 40rpx;
+  margin-top: 60rpx;
+}
+.form-input{
+  border: 1rpx solid #dbdbdb;
+  border-radius: 4px;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+.btn {
+  background-color: #04b706;
+  border: 1px solid #349e30;
+  color: #ffffff;
+  text-align: center;
+  margin: 15rpx 0;
+  padding: 15rpx 0;
+  border-radius: 5px;
+  line-height: 1.6em;
+  font-size: 30rpx;
+}
+.hidden {
+  display: none;
+}

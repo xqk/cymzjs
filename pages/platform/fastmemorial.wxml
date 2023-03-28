@@ -1,0 +1,50 @@
+<!--pages/platform/fastmemorial.wxml-->
+<view class="container" style="background-image: url({{item.backgroundImage}});">
+  <view class="avatar" style="background-image: url({{item.headImage}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 25}}rpx; top:{{150 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+  <view class="guangyun" style="background-image: url({{feteScene.guangyun[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 40}}rpx; top:{{142 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+
+  <view class="name" style="top:{{180 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx">
+    <view>{{item.relationOne}}{{item.nameOne}}</view>
+    <view>{{item.relationTwo}}{{item.nameTwo}}</view>
+  </view>
+
+  <view class="lazhu" style="background-image: url({{feteScene.lazhu[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 80}}rpx; top:{{228 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+  <view class="lazhu" style="background-image: url({{feteScene.lazhu[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 + 55}}rpx; top:{{228 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+
+  <view class="hudie" style="background-image: url({{feteScene.hudie[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 + 110}}rpx; top:{{170 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx"></view>
+  <view class="hudie" style="background-image: url({{feteScene.hudie[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 135}}rpx; top:{{170 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx;transform: rotateY(180deg);"></view>
+
+
+  <view class="xianheshengui" style="background-image: url({{feteScene.xianheshengui[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 - 95}}rpx; top:{{280 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx;"></view>
+  <view class="xianheshengui" style="background-image: url({{feteScene.xianheshengui[0].imageUrl}});left:{{windowInfo.width * windowInfo.rpxUnit / 2 + 45}}rpx; top:{{280 * windowInfo.rpxUnit + windowInfo.deviceTop}}rpx;transform: rotateY(180deg);"></view>
+
+  <view class="musicd">
+      <image src="https://static.imolacn.com/grj/resource/play.gif" wx:if="{{isPlay}}" bindtap="audioPause"></image>
+      <image src="https://static.imolacn.com/grj/resource/pause.gif" wx:else bindtap="audioPlay"></image>
+  </view>
+
+  <view class="menus">
+    <view class="menus-item" data-kind="saomu" bindtap="showDialog">
+      <image src="https://static.imolacn.com/grj/resource/m1.png"></image>
+      <view>扫墓</view>
+    </view>
+    <view class="menus-item" data-kind="xianhua" bindtap="showDialog">
+      <image src="https://static.imolacn.com/grj/resource/m2.png"></image>
+      <view>鲜花</view>
+    </view>
+    <view class="menus-item" data-kind="jingxiang" bindtap="showDialog">
+      <image src="https://static.imolacn.com/grj/resource/m3.png"></image>
+      <view>敬香</view>
+    </view>
+    <!-- <view class="menus-item" data-kind="bianpao" bindtap="bianpaoChange">
+      <image src="https://static.imolacn.com/grj/resource/m4.png"></image>
+      <view>鞭炮</view>
+    </view> -->
+    <view class="menus-item" data-kind="message" bindtap="showDialog">
+      <image src="https://static.imolacn.com/grj/resource/m5.png"></image>
+      <view>留言</view>
+    </view>
+  </view>
+
+  <dialog id="dialog" feteScene="{{feteScene}}" windowInfo="{{windowInfo}}" top="100" left="45"></dialog>
+</view>
