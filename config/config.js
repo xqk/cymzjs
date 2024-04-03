@@ -1,5 +1,5 @@
 export const dev = 0;
-export const host = 'https://zymzapi.icl.site';
+export const host = 'https://zymzapi.zc0901.com';
 // export const host = 'http://127.0.0.1:8887';
 export const qiniuUptokenURL = host + "/api/qiniu/token?bucket=1"
 export const fileHost = 'https://static.imolacn.com'

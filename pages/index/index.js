@@ -15,7 +15,7 @@ Page({
     platformName: "崇阳县民政局网络祭扫平台",
     mobileDesc: "联系电话",
     mobile: "15872055036",
-    yindaoheader: getFileUrl("resource/9C62085AE3CD47DABC8E2FE524BD34D7.png"),
+    yindaoheader: getFileUrl("resource/9C62085AE3CD47DABC8E2FE524BD34D8.png"),
     yindaofooter: getFileUrl("image/2022/03/23/239A8CE07DFA498A9640285B2E5C355B.png"),
     windowInfo: {
       width: 750,
